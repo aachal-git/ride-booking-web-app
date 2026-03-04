@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide | Ride</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="brand"><span class="brand-logo">🚲</span><span class="brand-text">EcoRide</span></a>
+            <nav class="nav" id="primaryNav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="rides.html">Rides</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Active Ride</h1>
+            <div class="highlights" style="margin-bottom:16px">
+                <div class="highlight"><div class="highlight-icon">⏱️</div><div><h3>Timer</h3><p id="rideTimer">00:00:00</p></div></div>
+                <div class="highlight"><div class="highlight-icon">📏</div><div><h3>Distance</h3><p id="rideDistance">0.0 km</p></div></div>
+                <div class="highlight"><div class="highlight-icon">💸</div><div><h3>Fare</h3><p id="rideFare">₹ 0.00</p></div></div>
+            </div>
+            <div class="map-embed" style="margin-bottom:16px">
+                <iframe title="Ride map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241317.11610037538!2d72.7410986!3d19.0825223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710000000000" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="center">
+                <a class="btn btn-outline" href="payment.html">End Ride</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      // simple timer placeholder
+      var start = Date.now();
+      setInterval(function(){
+        var s = Math.floor((Date.now()-start)/1000);
+        var h = String(Math.floor(s/3600)).padStart(2,'0');
+        var m = String(Math.floor((s%3600)/60)).padStart(2,'0');
+        var sec = String(s%60).padStart(2,'0');
+        var el = document.getElementById('rideTimer');
+        if(el){ el.textContent = h+':'+m+':'+sec; }
+      },1000);
+    </script>
+</body>
+</html>
+
+

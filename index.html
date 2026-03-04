@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rideit | Scan • Ride • Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="brand">
+                <span class="brand-logo">🚲</span>
+                <span class="brand-text">Rideit</span>
+            </a>
+            <nav class="nav" id="primaryNav">
+                <a href="#how">How it works</a>
+                <a href="#map">Bike stands</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#footer">Contact</a>
+                <a class="btn btn-outline" href="profile.html">Login</a>
+                <a class="btn btn-solid" href="profile.html">Sign up</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero with background image hook -->
+        <section class="hero" role="banner">
+            <div class="hero-overlay"></div>
+            <div class="container hero-inner">
+                <h1>Unlock. Ride. Return.</h1>
+                <p>Scan the QR, hop on a bike, and go. College and campus friendly.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-solid btn-lg" href="profile.html">Start Riding Now</a>
+                    <a class="btn btn-outline btn-lg" href="#how">See how it works</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how" class="section">
+            <div class="container">
+                <h2 class="section-title">How it works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">📲</div>
+                        <h3>Register</h3>
+                        <p>Create account, verify mobile via OTP, complete Aadhaar KYC.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🔍</div>
+                        <h3>Locate</h3>
+                        <p>See nearby bike stands and available bikes on the map.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🧾</div>
+                        <h3>Scan & Unlock</h3>
+                        <p>Scan the bike’s QR to unlock and start your ride.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">✅</div>
+                        <h3>Ride & Return</h3>
+                        <p>End ride at a stand. Auto-bill with UPI/cards/wallets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini map preview -->
+        <section id="map" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Nearby bike stands</h2>
+                <p class="section-sub">Preview of live map. Full map in Dashboard.</p>
+                <div class="map-embed">
+                    <!-- Replace the src with your Google Maps embed or Mapbox -->
+                    <iframe title="Map preview" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241317.11610037538!2d72.7410986!3d19.0825223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="center mt-16">
+                    <a class="btn btn-solid" href="dashboard.html">Open full map</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety / Ride highlights -->
+        <section class="section">
+            <div class="container highlights">
+                <div class="highlight">
+                    <div class="highlight-icon">🛡️</div>
+                    <div>
+                        <h3>Secure & Verified</h3>
+                        <p>Aadhaar-based KYC and safe payments (UPI/cards/wallets).</p>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-icon">🌱</div>
+                    <div>
+                        <h3>Eco-friendly</h3>
+                        <p>Track your carbon saved with every ride.</p>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-icon">⚡</div>
+                    <div>
+                        <h3>Fast & Easy</h3>
+                        <p>QR unlock, real-time GPS, instant invoicing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Loved by riders</h2>
+                <div class="testimonials">
+                    <blockquote class="testimonial">
+                        <p>“Perfect for my campus commute. QR unlock is super quick!”</p>
+                        <footer>— Aisha, Student</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>“Clean UI, reliable bikes, transparent pricing. 10/10.”</p>
+                        <footer>— Rohan, Intern</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>“Love the eco score. Makes me want to ride more.”</p>
+                        <footer>— Meera, Researcher</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <div class="brand footer-brand">
+                    <span class="brand-logo">🚲</span>
+                    <span class="brand-text">Rideit</span>
+                </div>
+                <p>Scan • Ride • Go — Smart campus mobility.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-cta">
+                <a class="btn btn-solid" href="profile.html">Get started</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <small>© <span id="year"></span> Ride. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
